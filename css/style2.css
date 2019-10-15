@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+body{
+  background-color: #000;
+}
+#wrap{
+  width: 1400px;
+  margin: 0 auto;
+  font-family: Pyunji R,sans-serif;
+}
+/* header */
+.nav{
+  position: fixed;
+  left: auto;
+  top: 0;
+  width: 1400px;
+  height: 200px;
+  background-image: url(../img/isysraid.png);
+  z-index: 9999;
+}
+.nav>.logo{
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  width: 191px;
+  margin-top: -54px;
+}
+.nav>.logo>a{
+  display: block;
+  height: 119px;
+  text-indent: -9999px;
+  background-image: url(../img/logo.png);
+}
+.nav>ul{
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  width: 693x;
+}
+.nav>.gnb>li{
+  float: left;
+}
+.nav>.gnb>li:first-child{
+  width: 206px;
+}
+.nav>.gnb>li:nth-child(2){
+  width: 174px;
+}
+.nav>.gnb>li:nth-child(3){
+  width: 90px;
+}
+.nav>.gnb>li:last-child{
+  width: 139px;
+  margin-left: 75px;
+}
+.nav>.gnb>li>a{
+  display: block;
+  height: 30px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.nav>.gnb>li.on>a{
+  color: gold;
+}
+/* ------------------------------------------------- */
+/* section */
+section{
+  width: 1400px;
+  margin-top: 200px;
+  font-size: 32px;
+}
+/* 슬라이드 */
+section>.slide{
+  overflow: hidden;
+  position: relative;
+  width: 1400px;
+}
+section>.slide>.slide-container{
+  position: relative;
+  left: 0;
+  top: 0;
+  width:4200px;
+}
+section>.slide>.slide-container>li{
+  float: left;
+  width: 1400px;
+}
+section>.slide>.slide-container>li>a{
+  display: block;
+  height:800px;
+  text-indent: -9999px;
+}
+section>.slide>.slide-container>li:first-child>a{
+  background-image: url(../img/slide_1.jpg);
+  background-repeat: no-repeat;
+}
+section>.slide>.slide-container>li:nth-child(2)>a{
+  background-image: url(../img/slide_2.jpg);
+  background-repeat: no-repeat;
+}
+section>.slide>.slide-container>li:last-child>a{
+  background-image: url(../img/slide_3.gif);
+  background-size: cover;
+}
+
+section>.slide>.slide-pagination{
+  position: absolute;
+  left: 50%;
+  top: 750px;
+}
+section>.slide>.slide-pagination>li{
+  float: left;
+  width: 18px;
+  margin-left: 15px;
+}
+section>.slide>.slide-pagination>li:first-child{
+  margin-left: 0;
+}
+section>.slide>.slide-pagination>li>a{
+  display: block;
+  height: 18px;
+  text-indent: -9999px;
+  background-image: url(../img/bul.png);
+}
+section>.slide>.slide-pagination>li.on>a{
+  background-position: 0 -18px;
+}
+section>.slide>.slide-pagination>li:hover>a{
+  background-position: 0 -18px;
+}
+
+section>.slide>.slide-navigation{
+  border: none;
+  background:none;
+  outline: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 100px;
+  margin-top: -50px;
+  text-indent: -9999px;
+  background-image: url(../img/btn_navigation.png);
+ 
+}
+section>.slide>.slide-prev{
+  left: 0;
+  background-position: -5px -225px;
+}
+button.slide-prev:hover{
+  background-position: -5px -335px;
+}
+section>.slide>.slide-next{
+  right: 0;
+  background-position: -5px -5px;
+}
+button.slide-next:hover{
+  background-position: -5px -115px;
+}
+/* -------------------------------- */
+/* 캐릭터소개 */
+section>.cont1{
+  position: relative;
+  width: 1400px;
+  height: 1000px;
+}
+section>.cont1>ul{
+  position: absolute;
+  right: -15px;
+  top: 20px;
+  width: 440px;
+
+}
+section>.cont1>ul>li{
+  float: left;
+  width: 184px;
+  margin: 0 10px 10px 10px;
+  border: 3px solid gold;
+  border-radius: 10%;
+}
+section>.cont1>ul>li:nth-child(2n+1){
+  margin-right: 0;
+}
+section>.cont1>ul>li>a{
+  display: block;
+  height: 105px;
+  color: #fff;
+  line-height: 105px;
+  text-align: center;
+}
+/* section>.cont1>ul>li:hover>ul{
+  display: block;
+} */
+section>.cont1>ul>li>ul{
+  display: none;
+  position: absolute;
+  left: -190px;
+  top: 50%;
+  margin-top: -75%;
+}
+section>.cont1>ul>li>ul>li{
+  width: 184px;
+  margin-bottom: 20px;
+  border: 3px solid gold;
+  border-radius: 10%;
+}
+section>.cont1>ul>li>ul>li:last-child{
+  margin-bottom: 0;
+}
+section>.cont1>ul>li>ul>li>a{
+  display: block;
+  height: 105px;
+  color: #fff;
+  line-height: 105px;
+  text-align: center;
+}
+section>.cont1>.video-container{
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 748px;
+  height: 632px;
+  border: 3px solid gold;
+}
+section>.cont1>.video-container>iframe{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+section>.cont1>.text{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  top: 680px;
+  width: 748px;
+  height: 266px;
+  color: #fff;
+  font-size: 23px;
+  text-align: justify;
+  border: 3px solid gold;
+}
+section>.cont1>.text>span{
+  display: block;
+  width: 100%;
+}
+/* ------------------------------------- */
+/* 사도 소개 */
+section>.cont2{
+  position: relative;
+  width: 1400px;
+  height: 1027px;
+}
+section>.cont2>ul{
+  position: absolute;
+  right: -15px;
+  top: 20px;
+  width: 440px;
+}
+section>.cont2>ul>li{
+  float: left;
+  width: 184px;
+  margin: 0 10px 10px 10px;
+  background-size: cover;
+  border: 3px solid gold;
+  border-radius: 10%;
+}
+section>.cont2>ul>li>a{
+  display: block;
+  height: 105px;
+  color: #fff;
+  line-height: 105px;
+  text-align: center;
+}
+section>.cont2>ul>li:first-child{
+  background-image: url(../img/sado_kain_m.jpg);
+}
+section>.cont2>ul>li:nth-child(2){
+  background-image: url(../img/sado_hilder_m.jpg);
+}
+section>.cont2>ul>li:nth-child(3){
+  background-image: url(../img/sado_isys_m.jpg);
+}
+section>.cont2>ul>li:nth-child(4){
+  background-image: url(../img/sado_kasiys_m.jpg);
+}
+section>.cont2>ul>li:nth-child(5){
+  background-image: url(../img/sado_siroko_m.jpg);
+}
+section>.cont2>ul>li:nth-child(6){
+  background-image: url(../img/sado_diregie_m.jpg);
+}
+section>.cont2>ul>li:nth-child(7){
+  background-image: url(../img/sado_roters_m.jpg);
+}
+section>.cont2>ul>li:nth-child(8){
+  background-image: url(../img/sado_anton_m.jpg);
+}
+section>.cont2>ul>li:nth-child(9){
+  background-image: url(../img/sado_bacal_m.jpg);
+}
+section>.cont2>ul>li:nth-child(10){
+  background-image: url(../img/sado_luke_m.jpg);
+}
+section>.cont2>ul>li:nth-child(11){
+  background-image: url(../img/sado_mikaela_m.jpg);
+}
+section>.cont2>ul>li:last-child{
+  background-image: url(../img/sado_ozma_m.jpg);
+}
+section>.cont2>ul>li:nth-child(2n+1){
+  margin-right: 0;
+}
+
+section>.cont2>.screen{
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 748px;
+  height: 632px;
+  text-indent: -9999px;
+  background-image: url(../img/sado_kain.jpg);
+  background-size: cover;
+  border: 3px solid gold;
+}
+section>.cont2>.text{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  top: 680px;
+  width: 748px;
+  height: 266px;
+  color: #fff;
+  text-align: justify;
+  font-size: 23px;
+  border: 3px solid gold;
+}
+section>.cont2>.text>span{
+  display: block;
+  width: 100%;
+}
+/* ----------------------------------- */
+/* 영상 */
+section>.cont3{
+  position: relative;
+  width: 1400px;
+  height: 1000px;
+}
+
+section>.cont3>ul{
+  position: absolute;
+  right: -15px;
+  top: 20px;
+  width: 440px;
+}
+section>.cont3>ul>li{
+  float: left;
+  width: 184px;
+  margin: 0 10px 10px 10px;
+  border: 3px solid gold;
+  border-radius: 10%;
+}
+section>.cont3>ul>li:nth-child(2n+1){
+  margin-right: 0;
+}
+section>.cont3>ul>li>a{
+  display: block;
+  height: 105px;
+  color: #fff;
+  line-height: 105px;
+  text-align: center;
+}
+section>.cont3>.text{
+  position: absolute;
+  left: 10px;
+  top: 680px;
+  width: 748px;
+  height: 266px;
+  color: #fff;
+  text-align: justify;
+  font-size: 26px;
+  border: 3px solid gold;
+}
+section>.cont3>.video-containers{
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 748px;
+  height: 632px;
+  text-indent: -9999px;
+  border: 3px solid gold;
+}
+section>.cont3>.video-containers>iframe{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+section>.cont3>.text{
+  display: flex;
+  align-items: center;
+}
+section>.cont3>.text>span{
+  display: block;
+  font-size: 23px;
+  width: 100%;
+}
+
+footer{
+  width: 1400px;
+}
+footer>address{
+  height: 200px;
+  color: #fff;
+  line-height: 200px;
+  text-align: center;
+}
